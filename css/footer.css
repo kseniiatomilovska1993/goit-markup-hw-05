@@ -1,0 +1,78 @@
+.footer {
+  background-color: var(--navy-blue);
+  padding: 100px 0;
+}
+
+/* Контейнер для выстраивания блоков футера в линию */
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Левый блок: Логотип и текст */
+.footer-info {
+  margin-right: 120px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: var(--cloud);
+}
+
+.footer-logo span {
+  color: var(--iris);
+}
+
+.footer-text {
+  max-width: 264px;
+  color: var(--cloud);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Правый блок: Соцсети */
+.footer-social-box {
+  display: block;
+}
+
+.footer-social-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris);
+  border-radius: 50%;
+  /* Анимация перехода цвета фона (в зеленоватый по ТЗ) */
+  transition: background-color var(--transition-dur-func);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-social-link svg {
+  fill: var(--cloud);
+}

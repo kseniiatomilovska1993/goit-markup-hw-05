@@ -1,0 +1,26 @@
+@import "./common.css";
+@import "./header.css";
+@import "./hero.css";
+@import "./features.css";
+@import "./team.css";
+@import "./portfolio.css";
+@import "./footer.css";
+
+.modal-close-btn {
+  fill: #2e2f42;
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #404bbf;
+  border-color: #404bbf;
+  fill: #ffffff;
+}
+
+.form-input:focus + .input-icon {
+  fill: #4d5ae5;
+}
