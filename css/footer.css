@@ -3,13 +3,11 @@
   padding: 100px 0;
 }
 
-/* Контейнер для выстраивания блоков футера в линию */
 .footer-container {
   display: flex;
   align-items: flex-start;
 }
 
-/* Левый блок: Логотип и текст */
 .footer-info {
   margin-right: 120px;
 }
@@ -32,12 +30,11 @@
   letter-spacing: 0.02em;
 }
 
-/* Правый блок: Соцсети */
-.footer-social-box {
-  display: block;
+.footer-socials {
+  margin-right: 80px;
 }
 
-.footer-social-title {
+.footer-socials-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -64,7 +61,6 @@
   height: 100%;
   background-color: var(--iris);
   border-radius: 50%;
-  /* Анимация перехода цвета фона (в зеленоватый по ТЗ) */
   transition: background-color var(--transition-dur-func);
 }
 
@@ -75,4 +71,73 @@
 
 .footer-social-link svg {
   fill: var(--cloud);
+}
+
+.footer-subscribe {
+  margin-left: auto;
+}
+
+.subscribe-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+
+.subscribe-input {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--white);
+  background-color: transparent;
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  outline: none;
+  transition: border-color var(--transition-dur-func);
+}
+
+.subscribe-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-input:focus {
+  border-color: #31d0aa;
+}
+
+.subscribe-btn {
+  min-width: 165px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--iris);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color var(--transition-dur-func);
+}
+
+.subscribe-btn svg {
+  fill: var(--white);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: #31d0aa;
 }
