@@ -107,7 +107,7 @@
 }
 
 .subscribe-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: #ffffff;
 }
 
 .subscribe-input:focus {
@@ -124,7 +124,7 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
